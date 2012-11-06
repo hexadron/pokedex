@@ -1,0 +1,6 @@
+%ul#pokemon-list
+  - @pokemons.each do |pokemon|
+    %li.pokemon
+      %h2= "#{pokemon.name} #{pokemon.number}"
+      %p= pokemon.kind
+      %img{src: pokemon.photo, alt: pokemon.name}
